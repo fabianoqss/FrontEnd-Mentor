@@ -12,27 +12,41 @@
   <section class="container-form">
     <h1>Contact Us</h1>
     <form action="">
-      <div class="primeira-Linha">
-        <label for="fisrtName">First Name</label>
-        <input type="text" id="fisrtName" name="fisrtName">
-        <label for="LastName">Last Name</label>
-        <input type="text" id="LastName" name="LastName">
+      <div class="first-line">
+        <div>
+          <label for="fisrtName">First Name</label>
+          <input type="text" id="fisrtName" name="fisrtName">
+        </div>
+        <div>
+          <label for="LastName">Last Name</label>
+          <input type="text" id="LastName" name="LastName">
+        </div>
       </div>
 
       <label for="Email">Email Address</label>
       <input type="email" id="Email" name="email">
 
       <p>Query Type</p>
-      <div class="radio">
-        <input type="radio" id="general">
-        <label for="general">General Enquiry</label>
-
+      <div class="choice">
+        <div class="mds">
+          <input type="radio" id="general">
+          <label for="general">General Enquiry</label>
+        </div>
+        <div class="mds">
+          <input type="radio" id="support">
+          <label for="support">Support Request</label>
+        </div>
       </div>
-      <div class="radio">
-        <input type="radio" id="support">
-        <label for="support">Support Request</label>
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5"></textarea>
 
+      <div class="checkbox">
+        <input type="checkbox" id="check" name="check">
+        <label for="check"> I consent o being contected by the team</label>
+
+        <button>Submit</button>
       </div>
+
     </form>
 
   </section>

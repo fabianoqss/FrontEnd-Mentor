@@ -4,3 +4,56 @@ p,
 body {
   margin: 0px;
 }
+
+body {
+  font-family: Arial;
+  font-weight: 500;
+  background-color: hsl(148, 38%, 91%);
+  height: 1000px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.container-form {
+  background-color: hsl(0, 0%, 100%);
+  padding: 36px;
+  border-radius: 10px;
+  display: grid;
+  gap: 50px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input {
+  font-size: 1.2rem;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+.first-line {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+#Email {
+  width: 95%;
+}
+
+.choice {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 15px;
+  gap: 20px;
+}
+
+.mds {
+  display: flex;
+  gap: 15px;
+  border: 2px solid;
+  align-items: center;
+}
