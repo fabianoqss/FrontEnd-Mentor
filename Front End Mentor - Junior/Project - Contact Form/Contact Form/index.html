@@ -28,14 +28,14 @@
 
       <p>Query Type</p>
       <div class="choice">
-        <div class="mds">
-          <input type="radio" id="general">
-          <label for="general">General Enquiry</label>
-        </div>
-        <div class="mds">
-          <input type="radio" id="support">
-          <label for="support">Support Request</label>
-        </div>
+        <label class="choice-checkbox" for="general">
+          <input type="radio" id="general" name="qualquer">
+          General Enquiry
+        </label>
+        <label class="choice-checkbox" for="support">
+          <input type="radio" id="support" name="qualquer">
+          Support Request
+        </label>
       </div>
       <label for="message">Message</label>
       <textarea id="message" name="message" rows="5"></textarea>
@@ -44,9 +44,8 @@
         <input type="checkbox" id="check" name="check">
         <label for="check"> I consent o being contected by the team</label>
 
-        <button>Submit</button>
       </div>
-
+      <button>Submit</button>
     </form>
 
   </section>
