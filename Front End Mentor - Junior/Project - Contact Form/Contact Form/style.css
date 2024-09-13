@@ -6,10 +6,9 @@ body {
 }
 
 body {
-  font-family: Arial;
-  font-weight: 500;
+  font-family: Karla;
   background-color: hsl(148, 38%, 91%);
-  height: 800px;
+  height: 900px;
   display: grid;
   justify-items: center;
   align-items: center;
@@ -23,8 +22,16 @@ body {
   gap: 50px;
 }
 
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
 label {
   display: block;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #3d4547;
 }
 
 input {
@@ -55,7 +62,7 @@ input {
 .choice-checkbox {
   display: flex;
   gap: 10px;
-  padding: 10px;
+  padding: 15px;
   cursor: pointer;
   border: 1px solid black;
   border-radius: 10px;
@@ -94,4 +101,11 @@ button {
   padding: 15px;
   width: 100%;
   box-sizing: border-box;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  color: white;
+  background-color: #0c7d69;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
 }
