@@ -25,12 +25,12 @@ body {
 
 label {
   display: block;
-  margin-bottom: 10px;
 }
 
 input {
   font-size: 1.2rem;
   padding: 10px;
+  margin-top: 20px;
   margin-bottom: 20px;
   border-radius: 10px;
   cursor: pointer;
@@ -73,4 +73,25 @@ input[type="radio"] {
   border-radius: 10px;
   resize: none;
   cursor: pointer;
+}
+
+#legal {
+  margin-bottom: 20px;
+}
+
+.checkbox {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+#check {
+  margin: 0px;
+}
+
+button {
+  padding: 15px;
+  width: 100%;
+  box-sizing: border-box;
 }
