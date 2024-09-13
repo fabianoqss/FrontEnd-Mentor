@@ -59,9 +59,18 @@ input {
   cursor: pointer;
   border: 1px solid black;
   border-radius: 10px;
+  margin-bottom: 20px;
 }
 
 input[type="radio"] {
-  vertical-align: middle; /* Alinha o radio button ao meio do texto */
+  vertical-align: middle;
   margin: 0;
+}
+
+#message {
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 10px;
+  resize: none;
+  cursor: pointer;
 }
