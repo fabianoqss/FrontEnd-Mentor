@@ -10,8 +10,8 @@ body {
   background-color: hsl(148, 38%, 91%);
   height: 900px;
   display: grid;
-  justify-items: center;
-  align-items: center;
+  justify-content: center;
+  align-content: center;
 }
 
 .container-form {
@@ -32,16 +32,19 @@ label {
   font-size: 1rem;
   font-weight: 400;
   color: #3d4547;
+  margin-bottom: 15px;
 }
 
 input {
+  border: 2px solid #939999;
   font-size: 1.2rem;
   padding: 10px;
-  margin-top: 20px;
   margin-bottom: 20px;
   border-radius: 10px;
   cursor: pointer;
+  outline: none;
 }
+
 .first-line {
   display: flex;
   gap: 15px;
@@ -64,14 +67,13 @@ input {
   gap: 10px;
   padding: 15px;
   cursor: pointer;
-  border: 1px solid black;
+  border: 1px solid #939999;
   border-radius: 10px;
   margin-bottom: 20px;
 }
 
 input[type="radio"] {
-  vertical-align: middle;
-  margin: 0;
+  margin: 0px;
 }
 
 #message {
@@ -80,14 +82,17 @@ input[type="radio"] {
   border-radius: 10px;
   resize: none;
   cursor: pointer;
+  outline: none;
+  padding: 5px;
 }
 
-#legal {
-  margin-bottom: 20px;
+#Message-Text {
+  display: block;
+  margin-bottom: 15px;
 }
 
 .checkbox {
-  margin: 20px 0;
+  margin: 30px 0;
   display: flex;
   align-items: center;
   gap: 20px;
@@ -108,4 +113,14 @@ button {
   border: none;
   border-radius: 10px;
   cursor: pointer;
+}
+
+input:hover {
+  border: 2px solid #0c7d69;
+  outline: none;
+}
+
+textarea:hover {
+  border: 1px solid #0c7d69;
+  outline: none;
 }
