@@ -35,6 +35,7 @@ label {
 }
 
 input {
+  font-size: 1rem;
   border: 1px solid #939999;
   outline: none;
   padding: 15px;
@@ -79,13 +80,13 @@ input[type="radio"] {
 #message {
   width: 100%;
   border: 1px solid #939999;
-  box-sizing: border-box;
   outline: none;
   border-radius: 10px;
   padding: 5px;
   cursor: pointer;
   resize: none;
   margin-top: 15px;
+  box-sizing: border-box;
 }
 
 input[type="checkbox"] {
@@ -110,4 +111,14 @@ button {
   border: none;
   border-radius: 10px;
   cursor: pointer;
+}
+
+input:hover,
+input:focus {
+  border: 1px solid #3a685d;
+  box-shadow: 0 0 0 2px rgba(227, 255, 255, 0.4);
+}
+
+button:hover {
+  background-color: #063f36;
 }
