@@ -51,17 +51,14 @@ input {
   margin-bottom: 20px;
   cursor: pointer;
   margin-top: 20px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .first-Last {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
-}
-
-#Email {
-  width: 100%;
-  box-sizing: border-box;
 }
 
 .choice {
