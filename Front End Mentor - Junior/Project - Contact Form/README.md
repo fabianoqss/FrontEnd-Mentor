@@ -46,4 +46,4 @@ The contact form allows users to submit their details, providing real-time valid
 
 2.  Open `index.html` in your browser to view the form.
 
-                                 Feedbacks are always welcome!
+ Feedbacks are always welcome!
