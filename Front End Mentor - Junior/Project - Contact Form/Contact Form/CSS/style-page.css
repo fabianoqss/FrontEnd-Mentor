@@ -8,15 +8,15 @@ body {
 body {
   font-family: Karla;
   background-color: hsl(148, 38%, 91%);
-  height: 900px;
+  height: 100vh;
   display: grid;
-  justify-items: center;
-  align-items: center;
+  justify-content: center;
+  align-content: center;
 }
 
 .container-form {
   background-color: hsl(0, 0%, 100%);
-  padding: 36px;
+  padding: 40px 50px;
   border-radius: 10px;
   display: grid;
   gap: 50px;
@@ -34,67 +34,71 @@ label {
   color: #3d4547;
 }
 
-input {
-  font-size: 1.2rem;
-  padding: 10px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  border-radius: 10px;
-  cursor: pointer;
-}
-.first-line {
-  display: flex;
-  gap: 15px;
+label:not(.choice)::after,
+p::after {
+  content: " *";
+  color: hsl(187, 24%, 22%);
+  font-size: 0.8em;
+  margin-left: 5px; /* Espaçamento entre o texto e o asterisco */
 }
 
-#Email {
+input {
+  font-size: 1rem;
+  border: 1px solid #939999;
+  outline: none;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  margin-top: 20px;
   width: 100%;
   box-sizing: border-box;
 }
 
+.first-Last {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
 .choice {
+  display: inline-flex;
+  gap: 10px;
+  padding: 15px;
+  cursor: pointer;
+  border: 1px solid #939999;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.choice-checkbox {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-top: 15px;
   gap: 20px;
 }
 
-.choice-checkbox {
-  display: flex;
-  gap: 10px;
-  padding: 15px;
-  cursor: pointer;
-  border: 1px solid black;
-  border-radius: 10px;
-  margin-bottom: 20px;
-}
-
 input[type="radio"] {
-  vertical-align: middle;
-  margin: 0;
+  margin: 0px;
 }
 
 #message {
   width: 100%;
-  box-sizing: border-box;
+  border: 1px solid #939999;
+  outline: none;
   border-radius: 10px;
-  resize: none;
+  padding: 10px;
   cursor: pointer;
-}
-
-#legal {
-  margin-bottom: 20px;
+  resize: none;
+  margin-top: 15px;
+  box-sizing: border-box;
 }
 
 .checkbox {
-  margin: 20px 0;
+  margin: 30px 0px;
   display: flex;
   align-items: center;
   gap: 20px;
-}
-
-#check {
-  margin: 0px;
 }
 
 button {

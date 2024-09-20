@@ -5,14 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Form</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./CSS/global.css">
 </head>
 
 <body>
   <section class="container-form">
     <h1>Contact Us</h1>
     <form action="">
-      <div class="first-line">
+      <div class="first-Last">
         <div>
           <label for="fisrtName">First Name</label>
           <input type="text" id="fisrtName" name="fisrtName">
@@ -27,18 +27,14 @@
       <input type="email" id="Email" name="email">
 
       <p>Query Type</p>
-      <div class="choice">
-        <label class="choice-checkbox" for="general">
-          <input type="radio" id="general" name="qualquer">
-          General Enquiry
-        </label>
-        <label class="choice-checkbox" for="support">
-          <input type="radio" id="support" name="qualquer">
-          Support Request
-        </label>
+      <div class="choice-checkbox">
+        <input type="radio" id="general" name="qualquer" checked="checked">
+        <label class="choice" for="general">General Enquiry</label>
+        <input type="radio" id="support" name="qualquer">
+        <label class="choice" for="support" checked="checked">Support Request</label>
       </div>
-      <label for="message" id="legal">Message</label>
-      <textarea id="message" name="message" rows="7"></textarea>
+      <label for="message" id="Message-Text">Message</label>
+      <textarea id="message" name="message" rows="5"></textarea>
 
       <div class="checkbox">
         <input type="checkbox" id="check" name="check">
