@@ -57,3 +57,9 @@ input[type="radio"]:checked + .choice:before {
   background-position: center;
   padding: 2px;
 }
+
+#message:hover,
+#message:focus {
+  border: 1px solid #3a685d;
+  box-shadow: 0 0 0 2px rgba(227, 255, 255, 0.4);
+}
