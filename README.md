@@ -17,4 +17,4 @@ If you'd like to contribute or provide feedback on any of the projects in this r
 Let's learn and grow together!
 
 ---
-                      Feedbacks and contributions are highly appreciated.
+Feedbacks and contributions are highly appreciated.
