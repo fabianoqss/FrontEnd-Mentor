@@ -39,7 +39,7 @@ p::after {
   content: " *";
   color: hsl(187, 24%, 22%);
   font-size: 0.8em;
-  margin-left: 5px; /* Espaçamento entre o texto e o asterisco */
+  margin-left: 5px;
 }
 
 input {
