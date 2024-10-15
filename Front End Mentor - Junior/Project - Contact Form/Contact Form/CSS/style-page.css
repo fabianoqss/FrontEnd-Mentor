@@ -113,3 +113,8 @@ button {
   border-radius: 10px;
   cursor: pointer;
 }
+
+.error {
+  display: block;
+  color: hsl(0, 66%, 54%);
+}
