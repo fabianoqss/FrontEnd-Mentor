@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        sm: '375px',
+        sm: { max: '375px' },
       },
       fontFamily: {
         Karla: ['Karla', 'sans-serif'],
