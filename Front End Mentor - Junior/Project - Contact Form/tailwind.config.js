@@ -3,6 +3,9 @@ module.exports = {
   content: ['./src/**/*.{html,js}'],
   theme: {
     extend: {
+      screens: {
+        sm: '375px',
+      },
       fontFamily: {
         Karla: ['Karla', 'sans-serif'],
       },
@@ -17,6 +20,8 @@ module.exports = {
         },
         red: '#D93333',
         white: '#FFFFFF',
+        bordercolor: '#939999',
+        hoverborder: '#3D685E',
         grey: {
           primary: '#92A1A1',
           secondary: '#1E3737',
