@@ -16,30 +16,30 @@
 
     <div class="grid">
       <label class="text-lg font-Karla font-normal block mb-4" for="firstName"> First Name <span class="text-grey-secondary">*</span></label>
-      <input type="text" id="firstName" name="firstName" class="rounded-xl  w-full p-4 border border-bordercolor hover:border-hoverborder cursor-pointer block">
+      <input type="text" id="firstName" name="firstName" class="rounded-lg  w-full p-3 border border-bordercolor hover:border-hoverborder cursor-pointer block">
 
       <label class="text-lg font-Karla font-normal block mb-4 sm:mt-8" for="lastname"> Last Name <span class="text-grey-secondary">*</span></label>
-      <input type="text" id="lastname" name="lastname" class="rounded-xl  w-full p-4 border border-bordercolor hover:border-hoverborder cursor-pointer block">
+      <input type="text" id="lastname" name="lastname" class="rounded-lg  w-full p-3 border border-bordercolor hover:border-hoverborder cursor-pointer block">
     </div>
 
     <label class="text-lg font-Karla font-normal block mb-4 sm:mt-8" for="email"> Email Address <span class="text-grey-secondary">*</span></label>
-    <input type="email" id="email" name="email" class="rounded-xl  w-full p-4 border border-bordercolor hover:border-hoverborder cursor-pointer block">
+    <input type="email" id="email" name="email" class="rounded-lg  w-full p-3 border border-bordercolor hover:border-hoverborder cursor-pointer block">
 
     <label class="text-lg font-Karla font-normal block mb-4 sm:mt-8" for="email"> Query Type <span class="text-grey-secondary">*</span></label>
 
-    <div>
-      <div class="radio">
-        <input type="radio" id="generalenquiry" name="retirada" />
+    <div class="sm:grid flex gap-4">
+      <div class="radio border hover:border-hoverborder p-3 border-bordercolor rounded-lg">
+        <input type="radio" id="generalenquiry" name="retirada " />
         <label for="generalenquiry">General Enquiry</label>
       </div>
-      <div class="radio">
+      <div class="radio border hover:border-hoverborder p-3 border-bordercolor rounded-lg">
         <input type="radio" id="supportrequest" name="retirada" />
         <label for="supportrequest">Support Request</label>
       </div>
     </div>
 
     <label class="text-lg font-Karla font-normal block mb-4 sm:mt-8" for="message"> Message <span class="text-grey-secondary">*</span></label>
-    <textarea name="message" id="message " rows="10" class="rounded-xl  w-full p-4 border border-bordercolor hover:border-hoverborder cursor-pointer block"></textarea>
+    <textarea name="message" id="message " rows="10" class="rounded-lg  w-full p-4 border border-bordercolor hover:border-hoverborder cursor-pointer block"></textarea>
 
     <div class="flex mt-8 items-center gap-2">
       <input type="checkbox" id="consent">
@@ -47,7 +47,7 @@
     </div>
 
 
-    <button class="font-Karla text-white font-bold py-5 bg-button-primary w-full mt-10 rounded-xl hover:bg-grey-secondary cursor-pointer"> Submit </button>
+    <button class="font-Karla text-white font-bold py-5 bg-button-primary w-full mt-10 rounded-lg hover:bg-grey-secondary cursor-pointer"> Submit </button>
 
   </form>
 
