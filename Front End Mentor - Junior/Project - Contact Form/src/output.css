@@ -570,6 +570,10 @@ video {
   margin-top: 2rem;
 }
 
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
 .block {
   display: block;
 }
@@ -606,6 +610,10 @@ video {
   border-radius: 0.75rem;
 }
 
+.rounded-2xl {
+  border-radius: 1rem;
+}
+
 .border {
   border-width: 1px;
 }
@@ -625,9 +633,9 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
-.bg-teal-950 {
+.bg-button-primary {
   --tw-bg-opacity: 1;
-  background-color: rgb(4 47 46 / var(--tw-bg-opacity, 1));
+  background-color: rgb(12 125 105 / var(--tw-bg-opacity, 1));
 }
 
 .p-4 {
@@ -636,6 +644,16 @@ video {
 
 .p-8 {
   padding: 2rem;
+}
+
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 
 .font-Karla {
@@ -665,9 +683,9 @@ video {
   color: rgb(30 55 55 / var(--tw-text-opacity, 1));
 }
 
-.text-green-950 {
+.text-white {
   --tw-text-opacity: 1;
-  color: rgb(5 46 22 / var(--tw-text-opacity, 1));
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
 .hover\:bg-hoverborder:hover {
@@ -676,10 +694,6 @@ video {
 }
 
 @media (min-width: 375px) {
-  .sm\:mt-4 {
-    margin-top: 1rem;
-  }
-
   .sm\:mt-8 {
     margin-top: 2rem;
   }

@@ -14,6 +14,9 @@ module.exports = {
         bold: '700',
       },
       colors: {
+        button: {
+          primary: '#0C7D69',
+        },
         green: {
           primary: '#D6F3E6',
           secondary: '#0F6F52',
