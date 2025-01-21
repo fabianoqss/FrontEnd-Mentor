@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        sm: '375px',
+        sm: { max: '375px' },
       },
       fontFamily: {
         Karla: ['Karla', 'sans-serif'],
@@ -20,6 +20,9 @@ module.exports = {
         green: {
           primary: '#D6F3E6',
           secondary: '#0F6F52',
+        },
+        boxShadow: {
+          bluezinho: '0 0 8px #E2FFFF',
         },
         red: '#D93333',
         white: '#FFFFFF',
