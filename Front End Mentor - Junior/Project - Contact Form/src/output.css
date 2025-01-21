@@ -598,6 +598,10 @@ video {
   cursor: pointer;
 }
 
+.resize-none {
+  resize: none;
+}
+
 .items-center {
   align-items: center;
 }
