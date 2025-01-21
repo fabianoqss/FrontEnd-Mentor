@@ -32,14 +32,16 @@
     <label class="text-lg font-Karla  block mb-4 mt-8" for="email"> Query Type <span class="text-grey-secondary">*</span></label>
 
     <div class="sm:grid flex gap-4">
-      <div class="radio border hover:border-hoverborder p-3 border-bordercolor rounded-lg cursor-pointer w-full">
-        <input type="radio" id="generalenquiry" name="retirada " class="mr-2" />
-        <label for="generalenquiry">General Enquiry</label>
-      </div>
-      <div class="radio border hover:border-hoverborder p-3 border-bordercolor rounded-lg cursor-pointer w-full">
-        <input type="radio" id="supportrequest" name="retirada" class="mr-2" />
-        <label for="supportrequest">Support Request</label>
-      </div>
+      <label class="flex items-center radio border hover:border-hoverborder p-3 border-bordercolor rounded-lg cursor-pointer w-full hover:bg-[#E0F1E7]" for="generalenquiry">
+        <input type="radio" id="generalenquiry" name="choose" class="mr-2 hidden peer" />
+        <span class="inline-block w-4 h-4 mr-2 border-2 border-bordercolor rounded-full peer-checked:border-hoverborder peer-checked:bg-hoverborder"></span>
+        General Enquiry
+      </label>
+      <label class="flex items-center radio border hover:border-hoverborder p-3 border-bordercolor rounded-lg cursor-pointer w-full hover:bg-[#E0F1E7]" for="supportrequest">
+        <input type="radio" id="supportrequest" name="choose" class="mr-2 hidden peer" />
+        <span class="inline-block w-4 h-4 mr-2 border-2 border-bordercolor rounded-full peer-checked:border-hoverborder peer-checked:bg-hoverborder"></span>
+        Support Request
+      </label>
     </div>
 
     <label class="text-lg   block mb-4 mt-8" for="message"> Message <span class="text-grey-secondary">*</span></label>
