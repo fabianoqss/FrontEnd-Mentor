@@ -24,6 +24,7 @@ module.exports = {
         boxShadow: {
           bluezinho: '0 0 8px #E2FFFF',
         },
+        borderError: '#996265',
         red: '#D93333',
         white: '#FFFFFF',
         bordercolor: '#939999',

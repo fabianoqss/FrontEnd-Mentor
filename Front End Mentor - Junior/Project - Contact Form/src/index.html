@@ -18,22 +18,24 @@
     <div class="grid grid-cols-2 sm:grid-cols-1 gap-4">
       <div>
         <label class="text-lg   block mb-3" for="firstName"> First Name <span class="text-grey-secondary">*</span></label>
-        <input type="text" id="firstName" name="firstName" class="rounded-lg  w-full p-3 border border-bordercolor hover:border-hoverborder outline-none focus:border-hoverborder cursor-pointer block">
+        <input type="text" id="firstName" name="firstName" class="rounded-lg  w-full p-3 border border-bordercolor hover:border-hoverborder outline-none focus:border-hoverborder cursor-pointer block" required>
+        <span class="text-red text-lg inline-block mt-2"></span>
       </div>
 
       <div>
-        <label class="text-lg   block mb-3" for="lastname"> Last Name <span class="text-grey-secondary">*</span></label>
-        <input type="text" id="lastname" name="lastname" class="rounded-lg  w-full p-3 border border-bordercolor hover:border-hoverborder outline-none focus:border-hoverborder cursor-pointer block">
+        <label class="text-lg block mb-3" for="lastname"> Last Name <span class="text-grey-secondary">*</span></label>
+        <input type="text" id="lastname" name="lastname" class="rounded-lg  w-full p-3 border border-bordercolor hover:border-hoverborder outline-none focus:border-hoverborder cursor-pointer block" required>
+        <span class="text-red text-lg inline-block mt-2"></span>
       </div>
     </div>
 
     <label class="text-lg   block mb-3 mt-8" for="email"> Email Address <span class="text-grey-secondary">*</span></label>
-    <input type="email" id="email" name="email" class="rounded-lg  w-full p-3 border border-bordercolor hover:border-hoverborder outline-none focus:border-hoverborder cursor-pointer block">
+    <input type="email" id="email" name="email" class="rounded-lg  w-full p-3 border border-bordercolor hover:border-hoverborder outline-none focus:border-hoverborder cursor-pointer block" required>
 
-    <label class="text-lg font-Karla  block mb-3 mt-8" for="email"> Query Type <span class="text-grey-secondary">*</span></label>
 
 
     <!----------------------              QUERY TYPE            -->
+    <label class="text-lg font-Karla  block mb-3 mt-4" for="email"> Query Type <span class="text-grey-secondary">*</span></label>
 
     <div class="sm:grid flex gap-4">
 
@@ -57,14 +59,17 @@
     <label class="text-lg   block mb-3 mt-8" for="message"> Message <span class="text-grey-secondary">*</span></label>
     <textarea name="message" id="message " rows="3" class="rounded-lg  w-full p-4 border border-bordercolor hover:border-hoverborder outline-none focus:border-hoverborder resize-none cursor-pointer block"></textarea>
 
+    <!----------------------              Contacted           -->
+
     <label class="flex items-center text-lg cursor-pointer mt-8 gap-2" for="consent">
       <input type="checkbox" id="consent" class="hidden peer">
       <span class="inline-block w-4 h-4 mr-2 border-2 border-bordercolor peer-checked:bg-hoverborder peer-checked:border-hoverborder"></span>
       I consent to being contacted by the team <span class="text-grey-secondary">*</span>
     </label>
 
+    <!----------------------              Button           -->
 
-    <button class="text-white font-bold py-5 bg-button-primary w-full mt-10 rounded-lg hover:bg-grey-secondary cursor-pointer"> Submit </button>
+    <button id="btnsummit" class="text-white font-bold py-5 bg-button-primary w-full mt-10 rounded-lg hover:bg-grey-secondary cursor-pointer"> Submit </button>
 
   </form>
 
