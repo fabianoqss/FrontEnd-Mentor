@@ -1,6 +1,6 @@
 const forms = document.getElementById('forms');
 
-function handleChange(event) {
+export default function handleChange(event) {
   const target = event.target;
   if (!target.checkValidity()) {
     target.classList.add('border-borderError');
@@ -10,5 +10,10 @@ function handleChange(event) {
   } else {
     target.classList.remove('border-borderError');
   }
+
+  const formData = JSON.parse(localStorage.getItem('formData')) || {};
+  formData[target.name] = target.value;
+  localStorage.setItem('formData', JSON.stringify(formData));
 }
+
 forms.addEventListener('change', handleChange);

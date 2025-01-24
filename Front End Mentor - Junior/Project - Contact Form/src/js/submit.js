@@ -1,8 +1,13 @@
-const forms = document.getElementById('forms');
+const formulario = document.getElementById('forms');
 
-function successful(event) {
+export default function successful(event) {
   event.preventDefault();
-  const success = document.getElementById('success');
+  const success = document.getElementById('success-message');
+  success.classList.remove('hidden');
+
+  setTimeout(() => {
+    success.classList.add('hidden');
+  }, 3000);
 }
 
-forms.addEventListener('submit', successful);
+formulario.addEventListener('submit', successful);
