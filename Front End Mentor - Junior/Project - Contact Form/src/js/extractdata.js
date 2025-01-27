@@ -30,8 +30,18 @@ function handleChange(event) {
   saveFormData(target);
 }
 
-function successful(event) {
+forms.addEventListener('submit', (event) => {
   event.preventDefault();
+  const target = event.target;
+  if (!target.checkValidity()) {
+    if (target.name === 'choose')
+      showError(target.nextElementSibling, 'Please select a query Type');
+    else if (target.name === 'consent')
+      showError(
+        target.nextElementSibling,
+        'To submit this form, please consent to being contacted',
+      );
+  }
   successMessage.classList.remove('hidden');
 
   setTimeout(() => successMessage.classList.add('hidden'), 3000);
@@ -40,7 +50,6 @@ function successful(event) {
     forms.reset();
     window.location.reload();
   }, 5000);
-}
+});
 
-forms.addEventListener('change', handleChange);
-forms.addEventListener('submit', successful);
+forms.addEventListener('submit', handleChange);
