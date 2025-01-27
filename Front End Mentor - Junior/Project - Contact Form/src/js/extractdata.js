@@ -1,6 +1,6 @@
 const forms = document.getElementById('forms');
 
-export default function handleChange(event) {
+function handleChange(event) {
   const target = event.target;
   if (!target.checkValidity()) {
     target.classList.add('border-borderError');
@@ -16,4 +16,20 @@ export default function handleChange(event) {
   localStorage.setItem('formData', JSON.stringify(formData));
 }
 
+function successful(event) {
+  event.preventDefault();
+  const success = document.getElementById('success-message');
+  success.classList.remove('hidden');
+
+  setTimeout(() => {
+    success.classList.add('hidden');
+  }, 3000);
+
+  setTimeout(() => {
+    window.location.reload();
+    formulario.reset();
+  }, 5000);
+}
+
 forms.addEventListener('change', handleChange);
+forms.addEventListener('submit', successful);
