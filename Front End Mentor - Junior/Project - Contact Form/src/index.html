@@ -38,23 +38,25 @@
 
     <!----------------------              QUERY TYPE            -->
     <div>
-      <label class="text-lg font-Karla block mb-3"> Query Type <span class="text-grey-secondary">*</span></label>
+      <p class="text-lg font-Karla mb-3"> Query Type <span class="text-grey-secondary">*</span></p>
 
       <div class="sm:grid flex gap-4">
-        <label class="flex items-center  border hover:border-hoverborder p-3 border-bordercolor rounded-lg cursor-pointer w-full hover:bg-[#E0F1E7] " for="generalenquiry">
-          <input type="radio" id="generalenquiry" name="choose" class=" w-4 h-4 mr-2 border-2 border-bordercolor " />
+        <!-- General Enquiry -->
+        <label class="flex items-center border hover:border-hoverborder p-3 border-bordercolor rounded-lg cursor-pointer w-full hover:bg-[#E0F1E7]">
+          <input type="radio" id="generalenquiry" name="choose" class="hidden peer" />
+          <span class="w-4 h-4 mr-2 border-2 border-bordercolor rounded-full bg-white peer-checked:bg-green-secondary peer-checked:border-white peer-checked:outline peer-checked:outline-2 peer-checked:outline-green-secondary"></span>
           General Enquiry
         </label>
 
-
-        <label class="flex items-center border hover:border-hoverborder p-3 border-bordercolor rounded-lg cursor-pointer w-full hover:bg-[#E0F1E7]" for="supportrequest">
-          <input type="radio" id="supportrequest" name="choose" class="w-4 h-4 mr-2 border-2 border-bordercolor" />
+        <!-- Support Request -->
+        <label class="flex items-center border hover:border-hoverborder p-3 border-bordercolor rounded-lg cursor-pointer w-full hover:bg-[#E0F1E7]">
+          <input type="radio" id="supportrequest" name="choose" class="hidden peer" />
+          <span class="w-4 h-4 mr-2 border-2 border-bordercolor rounded-full bg-white peer-checked:bg-green-secondary peer-checked:border-white peer-checked:outline peer-checked:outline-2 peer-checked:outline-green-secondary"></span>
           Support Request
         </label>
       </div>
-      <span class="text-red text-lg mt-2 hidden ">Please select a query type</span>
+      <span class="text-red text-lg mt-2 hidden">Please select a query type</span>
     </div>
-
 
     <!----------------------              MESSAGE           -->
     <div>
