@@ -807,6 +807,11 @@ video {
   border-color: rgb(255 255 255 / var(--tw-border-opacity, 1));
 }
 
+.peer:checked ~ .peer-checked\:border-green-secondary {
+  --tw-border-opacity: 1;
+  border-color: rgb(15 111 82 / var(--tw-border-opacity, 1));
+}
+
 .peer:checked ~ .peer-checked\:bg-green-secondary {
   --tw-bg-opacity: 1;
   background-color: rgb(15 111 82 / var(--tw-bg-opacity, 1));

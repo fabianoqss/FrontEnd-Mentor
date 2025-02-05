@@ -16,23 +16,23 @@
     <!----------------------              First Name and Last Name            -->
 
     <div class="grid grid-cols-2 sm:grid-cols-1 gap-4">
-      <div>
+      <div class="input-box">
         <label class="text-lg block mb-3" for="firstName">First Name<span class="text-grey-secondary">*</span></label>
-        <input type="text" id="firstName" name="firstName" class="rounded-lg  w-full p-3 border border-bordercolor hover:border-hoverborder outline-none focus:border-hoverborder cursor-pointer block" required>
-        <span class="text-red text-lg mt-2 hidden">This field is required</span>
+        <input type="text" id="firstName" name="firstName" class="rounded-lg  w-full p-3 border border-bordercolor hover:border-hoverborder outline-none focus:border-hoverborder cursor-pointer block">
+        <span class="text-red text-lg mt-2 hidden error"></span>
       </div>
 
-      <div>
-        <label class="text-lg block mb-3" for="lastname"> Last Name <span class="text-grey-secondary">*</span></label>
-        <input type="text" id="lastname" name="lastname" class="rounded-lg  w-full p-3 border border-bordercolor hover:border-hoverborder outline-none focus:border-hoverborder cursor-pointer block">
-        <span class="text-red text-lg mt-2 hidden">This field is required </span>
+      <div class="input-box">
+        <label class="text-lg block mb-3" for="lastName"> Last Name <span class="text-grey-secondary">*</span></label>
+        <input type="text" id="lastName" name="lastName" class="rounded-lg  w-full p-3 border border-bordercolor hover:border-hoverborder outline-none focus:border-hoverborder cursor-pointer block">
+        <span class="text-red text-lg mt-2 error"></span>
       </div>
     </div>
 
-    <div>
+    <div class="input-box">
       <label class="text-lg block mb-3" for="email"> Email Address <span class="text-grey-secondary">*</span></label>
-      <input type="email" id="email" name="email" class="rounded-lg  w-full p-3 border border-bordercolor hover:border-hoverborder outline-none focus:border-hoverborder cursor-pointer block" required>
-      <span class="text-red text-lg mt-2 hidden">Please enter a valid email address</span>
+      <input type="email" id="email" name="email" class="rounded-lg  w-full p-3 border border-bordercolor hover:border-hoverborder outline-none focus:border-hoverborder cursor-pointer block">
+      <span class="text-red text-lg mt-2"></span>
     </div>
 
 
@@ -42,7 +42,7 @@
 
       <div class="sm:grid flex gap-4">
         <!-- General Enquiry -->
-        <label class="flex items-center border hover:border-hoverborder p-3 border-bordercolor rounded-lg cursor-pointer w-full hover:bg-[#E0F1E7]">
+        <label class="flex items-center border hover:border-hoverborder p-3 border-bordercolor rounded-lg cursor-pointer w-full hover:bg-[#E0F1E7] peer-checked:border-green-secondary peer-checked:outline peer-checked:outline-2 peer-checked:outline-green-secondary">
           <input type="radio" id="generalenquiry" name="choose" class="hidden peer" />
           <span class="w-4 h-4 mr-2 border-2 border-bordercolor rounded-full bg-white peer-checked:bg-green-secondary peer-checked:border-white peer-checked:outline peer-checked:outline-2 peer-checked:outline-green-secondary"></span>
           General Enquiry
@@ -55,14 +55,14 @@
           Support Request
         </label>
       </div>
-      <span class="text-red text-lg mt-2 hidden">Please select a query type</span>
+      <span class="text-red text-lg mt-2 "></span>
     </div>
 
     <!----------------------              MESSAGE           -->
     <div>
-      <label class="text-lg block mb-3"> Message <span class="text-grey-secondary">*</span></label>
+      <label class=" text-lg block mb-3"> Message <span class="text-grey-secondary">*</span></label>
       <textarea name="message" id="message " rows="3" class="rounded-lg  w-full p-4 border border-bordercolor hover:border-hoverborder outline-none focus:border-hoverborder resize-none cursor-pointer block"></textarea>
-      <span class="text-red text-lg mt-4 hidden"> This field is required</span>
+      <span class="text-red text-lg mt-4 error"></span>
     </div>
     <!----------------------              Contacted           -->
 
@@ -71,12 +71,12 @@
 
       <input type="checkbox" id="consent" class="w-4 h-4 border-2 accent-hoverborder mr-2 rounded-none">
       <label for="consent">I consent to being contacted by the team<span class="text-grey-secondary"> *</span></label>
-      <span class="text-red text-lg error-submit hidden">To submit this form, please consent to being contacted</span>
+      <span class="text-red text-lg error"></span>
     </div>
 
     <!----------------------              Button           -->
 
-    <button id="btnsummit" class="text-white font-bold py-5 bg-button-primary w-full  rounded-lg hover:bg-grey-secondary cursor-pointer"> Submit </button>
+    <button type="submit" id="btnsummit" class="text-white font-bold py-5 bg-button-primary w-full  rounded-lg hover:bg-grey-secondary cursor-pointer"> Submit </button>
 
   </form>
   <!--                               Message Sent        -->
@@ -88,7 +88,7 @@
     <p class="text-white mt-4">Thanks for completing the form. We'll be in touch soon!</p>
   </section>
 
-  <script type="module" src="./js/extractdata.js"></script>
+  <script src="./js/extractdata.js"></script>
 
   <footer class="text-black text-lg text-center py-4">
     <p class="text-sm">Made by Fabiano &copy; 2025</p>
