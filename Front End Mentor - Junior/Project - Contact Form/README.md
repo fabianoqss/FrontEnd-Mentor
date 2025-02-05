@@ -6,10 +6,16 @@ This project is a **Contact Form** built with HTML, CSS, and JavaScript, designe
 
 The contact form allows users to submit their details, providing real-time validation and user feedback. It adapts to different screen sizes and is fully accessible for keyboard and screen reader users.
 
+## Project Preview
+
+![Image](https://github.com/user-attachments/assets/43b404ce-4993-4e22-adf1-1ed638f9bc90)
+
+![Image](https://github.com/user-attachments/assets/e25ab827-219c-4738-b489-560e74604929)
+
 ## Technologies Used
 
 - **HTML**: Provides the structure and content of the form.
-- **CSS**: Styles the form and ensures responsiveness across different devices.
+- **Tailwind**: is a CSS framework utility that provides predefined classes for styling elements directly in HTML.
 - **JavaScript**: Handles form validation, DOM manipulation, and user interaction feedback.
 
 ## Features
