@@ -18,21 +18,21 @@
     <div class="grid grid-cols-2 sm:grid-cols-1 gap-4">
       <div>
         <label class="text-lg block mb-3" for="firstName">First Name<span class="text-grey-secondary">*</span></label>
-        <input type="text" id="firstName" name="firstName" class="rounded-lg  w-full p-3 border border-bordercolor hover:border-hoverborder outline-none focus:border-hoverborder cursor-pointer block">
-        <span class="text-red text-lg mt-2 hidden normal-error">This field is required</span>
+        <input type="text" id="firstName" name="firstName" class="rounded-lg  w-full p-3 border border-bordercolor hover:border-hoverborder outline-none focus:border-hoverborder cursor-pointer block" required>
+        <span class="text-red text-lg mt-2 hidden">This field is required</span>
       </div>
 
       <div>
         <label class="text-lg block mb-3" for="lastname"> Last Name <span class="text-grey-secondary">*</span></label>
         <input type="text" id="lastname" name="lastname" class="rounded-lg  w-full p-3 border border-bordercolor hover:border-hoverborder outline-none focus:border-hoverborder cursor-pointer block">
-        <span class="text-red text-lg mt-2 hidden normal-error">This field is required </span>
+        <span class="text-red text-lg mt-2 hidden">This field is required </span>
       </div>
     </div>
 
     <div>
       <label class="text-lg block mb-3" for="email"> Email Address <span class="text-grey-secondary">*</span></label>
-      <input type="email" id="email" name="email" class="rounded-lg  w-full p-3 border border-bordercolor hover:border-hoverborder outline-none focus:border-hoverborder cursor-pointer block">
-      <span class="text-red text-lg mt-2 hidden email-error">Please enter a valid email address</span>
+      <input type="email" id="email" name="email" class="rounded-lg  w-full p-3 border border-bordercolor hover:border-hoverborder outline-none focus:border-hoverborder cursor-pointer block" required>
+      <span class="text-red text-lg mt-2 hidden">Please enter a valid email address</span>
     </div>
 
 
@@ -62,7 +62,7 @@
     <div>
       <label class="text-lg block mb-3"> Message <span class="text-grey-secondary">*</span></label>
       <textarea name="message" id="message " rows="3" class="rounded-lg  w-full p-4 border border-bordercolor hover:border-hoverborder outline-none focus:border-hoverborder resize-none cursor-pointer block"></textarea>
-      <span class="text-red text-lg mt-4 normal-error hidden"> This field is required</span>
+      <span class="text-red text-lg mt-4 hidden"> This field is required</span>
     </div>
     <!----------------------              Contacted           -->
 
