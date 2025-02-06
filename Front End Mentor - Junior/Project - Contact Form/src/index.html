@@ -19,13 +19,13 @@
       <div class="input-box">
         <label class="text-lg block mb-3" for="firstName">First Name<span class="text-grey-secondary">*</span></label>
         <input type="text" id="firstName" name="firstName" class="rounded-lg  w-full p-3 border border-bordercolor hover:border-hoverborder outline-none focus:border-hoverborder cursor-pointer block">
-        <span class="text-red text-lg mt-2 hidden error"></span>
+        <span class="text-red text-lg mt-2"></span>
       </div>
 
       <div class="input-box">
         <label class="text-lg block mb-3" for="lastName"> Last Name <span class="text-grey-secondary">*</span></label>
         <input type="text" id="lastName" name="lastName" class="rounded-lg  w-full p-3 border border-bordercolor hover:border-hoverborder outline-none focus:border-hoverborder cursor-pointer block">
-        <span class="text-red text-lg mt-2 error"></span>
+        <span class="text-red text-lg mt-2"></span>
       </div>
     </div>
 
@@ -40,7 +40,7 @@
     <div>
       <p class="text-lg font-Karla mb-3"> Query Type <span class="text-grey-secondary">*</span></p>
 
-      <div class="sm:grid flex gap-4">
+      <div class="sm:grid flex gap-4 relative">
         <!-- General Enquiry -->
         <label class="flex items-center border hover:border-hoverborder p-3 border-bordercolor rounded-lg cursor-pointer w-full hover:bg-[#E0F1E7] peer-checked:border-green-secondary peer-checked:outline peer-checked:outline-2 peer-checked:outline-green-secondary">
           <input type="radio" id="generalenquiry" name="choose" class="hidden peer" />
@@ -55,24 +55,23 @@
           Support Request
         </label>
       </div>
-      <span class="text-red text-lg mt-2 "></span>
     </div>
+    <span class="text-red text-lg query hidden">Please select a query type</span>
 
     <!----------------------              MESSAGE           -->
     <div>
       <label class=" text-lg block mb-3"> Message <span class="text-grey-secondary">*</span></label>
-      <textarea name="message" id="message " rows="3" class="rounded-lg  w-full p-4 border border-bordercolor hover:border-hoverborder outline-none focus:border-hoverborder resize-none cursor-pointer block"></textarea>
-      <span class="text-red text-lg mt-4 error"></span>
+      <textarea name="message" id="message" rows="3" class="rounded-lg  w-full p-4 border border-bordercolor hover:border-hoverborder outline-none focus:border-hoverborder resize-none cursor-pointer block"></textarea>
+      <span class="text-red text-lg mt-4"></span>
     </div>
     <!----------------------              Contacted           -->
 
 
     <div class="flex items-center text-lg cursor-pointer  gap-2">
-
       <input type="checkbox" id="consent" class="w-4 h-4 border-2 accent-hoverborder mr-2 rounded-none">
       <label for="consent">I consent to being contacted by the team<span class="text-grey-secondary"> *</span></label>
-      <span class="text-red text-lg error"></span>
     </div>
+    <span class="text-red text-lg error  hidden mt-2 error"></span>
 
     <!----------------------              Button           -->
 
