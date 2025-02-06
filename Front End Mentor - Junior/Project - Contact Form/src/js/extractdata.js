@@ -1,5 +1,6 @@
 const formulario = document.getElementById('forms');
 const data = {};
+const messageSent = document.getElementById('success-message');
 
 function validateField(field, errorMessage) {
   const errorSpan = field.nextElementSibling;
@@ -24,7 +25,6 @@ function validateRadio(name, errorSpan) {
   } else {
     errorSpan.innerText = '';
     errorSpan.classList.add('hidden');
-    field.classList.remove('border-red-500');
     data[name] = selectedRadio.value;
     return true;
   }
@@ -44,6 +44,25 @@ function validateCheckbox(field, errorMessage) {
   }
 }
 
+function validateEmail(field, errorMessage) {
+  const errorSpan = field.nextElementSibling;
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (isEmpty(field.value)) {
+    errorSpan.innerText = 'Please enter a valid email address';
+    errorSpan.classList.remove('hidden');
+    return false;
+  } else if (!emailRegex.test(field.value)) {
+    errorSpan.innerText = errorMessage;
+    errorSpan.classList.remove('hidden');
+    return false;
+  } else {
+    errorSpan.innerText = '';
+    errorSpan.classList.add('hidden');
+    data[field.name] = field.value;
+    return true;
+  }
+}
+
 formulario.addEventListener('submit', (e) => {
   e.preventDefault();
 
@@ -55,6 +74,12 @@ formulario.addEventListener('submit', (e) => {
     document.getElementById('lastName'),
     'This field is Required',
   );
+
+  const emailValid = validateEmail(
+    document.getElementById('email'),
+    'Please enter a valid email address.',
+  );
+
   const messageValid = validateField(
     document.getElementById('message'),
     'This field is Required',
@@ -73,13 +98,29 @@ formulario.addEventListener('submit', (e) => {
   if (
     firstNameValid &&
     lastNameValid &&
+    emailValid &&
     messageValid &&
     queryTypeValid &&
     consentValid
   ) {
-    console.log('Form is valid!', data);
+    console.log('entrei aqui');
+    saveToLocalStorage(data);
+    messageSent.classList.remove('hidden');
+    setTimeout(() => {
+      messageSent.classList.add('hidden');
+      location.reload();
+    }, 5000);
   }
 });
+
+function saveToLocalStorage(data) {
+  try {
+    localStorage.setItem('formData', JSON.stringify(data));
+    console.log('Dados salvos no localStorage:', data);
+  } catch (error) {
+    console.error('Erro ao salvar no localStorage:', error);
+  }
+}
 
 function isEmpty(value) {
   return value.trim() === '';
