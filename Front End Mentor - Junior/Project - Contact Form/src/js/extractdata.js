@@ -103,7 +103,6 @@ formulario.addEventListener('submit', (e) => {
     queryTypeValid &&
     consentValid
   ) {
-    console.log('entrei aqui');
     saveToLocalStorage(data);
     messageSent.classList.remove('hidden');
     setTimeout(() => {
