@@ -8,67 +8,93 @@
   <link rel="stylesheet" href="./output.css">
 </head>
 
-<body class="bg-[#E0F1E7] grid justify-center font-Karla">
+<body class="bg-[#E0F1E7] grid place-items-center font-Karla min-h-screen px-5">
 
-  <form id="forms" class="bg-white m-5 rounded-lg p-8 w-full">
-    <h1 class="text-4xl text-grey-secondary  font-bold mb-10">Contact Us</h1>
+  <form id="forms" class="grid gap-8 bg-white rounded-lg p-8 w-full max-w-custom">
+    <h1 class="text-4xl text-grey-secondary  font-bold">Contact Us</h1>
 
     <!----------------------              First Name and Last Name            -->
 
     <div class="grid grid-cols-2 sm:grid-cols-1 gap-4">
-      <div>
-        <label class="text-lg   block mb-3" for="firstName"> First Name <span class="text-grey-secondary">*</span></label>
+      <div class="input-box">
+        <label class="text-lg block mb-3" for="firstName">First Name <span class="text-grey-secondary">*</span></label>
         <input type="text" id="firstName" name="firstName" class="rounded-lg  w-full p-3 border border-bordercolor hover:border-hoverborder outline-none focus:border-hoverborder cursor-pointer block">
+        <span class="text-red text-lg mt-2"></span>
       </div>
 
-      <div>
-        <label class="text-lg   block mb-3" for="lastname"> Last Name <span class="text-grey-secondary">*</span></label>
-        <input type="text" id="lastname" name="lastname" class="rounded-lg  w-full p-3 border border-bordercolor hover:border-hoverborder outline-none focus:border-hoverborder cursor-pointer block">
+      <div class="input-box">
+        <label class="text-lg block mb-3" for="lastName"> Last Name <span class="text-grey-secondary">*</span></label>
+        <input type="text" id="lastName" name="lastName" class="rounded-lg  w-full p-3 border border-bordercolor hover:border-hoverborder outline-none focus:border-hoverborder cursor-pointer block">
+        <span class="text-red text-lg mt-2"></span>
       </div>
     </div>
 
-    <label class="text-lg   block mb-3 mt-8" for="email"> Email Address <span class="text-grey-secondary">*</span></label>
-    <input type="email" id="email" name="email" class="rounded-lg  w-full p-3 border border-bordercolor hover:border-hoverborder outline-none focus:border-hoverborder cursor-pointer block">
-
-    <label class="text-lg font-Karla  block mb-3 mt-8" for="email"> Query Type <span class="text-grey-secondary">*</span></label>
+    <div class="input-box">
+      <label class="text-lg block mb-3" for="email"> Email Address <span class="text-grey-secondary">*</span></label>
+      <input type="email" id="email" name="email" class="rounded-lg  w-full p-3 border border-bordercolor hover:border-hoverborder outline-none focus:border-hoverborder cursor-pointer block">
+      <span class="text-red text-lg mt-2"></span>
+    </div>
 
 
     <!----------------------              QUERY TYPE            -->
+    <section>
+      <p class="text-lg font-Karla mb-3"> Query Type <span class="text-grey-secondary">*</span></p>
 
-    <div class="sm:grid flex gap-4">
+      <div class="sm:grid flex gap-4 relative">
+        <!-- General Enquiry -->
+        <label class="flex items-center border hover:border-hoverborder p-3 border-bordercolor rounded-lg cursor-pointer w-full hover:bg-[#E0F1E7]">
+          <input type="radio" id="generalenquiry" name="choose" class="hidden peer" />
+          <span class="w-4 h-4 mr-2 border-2 border-bordercolor rounded-full bg-white peer-checked:bg-green-secondary peer-checked:border-white peer-checked:outline peer-checked:outline-2 peer-checked:outline-green-secondary"></span>
+          General Enquiry
+        </label>
+
+        <!-- Support Request -->
+        <label class="flex items-center border hover:border-hoverborder p-3 border-bordercolor rounded-lg cursor-pointer w-full hover:bg-[#E0F1E7] peer-checked:bg-[#E0F1E7] peer-checked:outline peer-checked:outline-2 peer-checked:outline-green-secondary">
+          <input type="radio" id="supportrequest" name="choose" class="hidden peer" />
+          <span class="w-4 h-4 mr-2 border-2 border-bordercolor rounded-full bg-white peer-checked:bg-green-secondary peer-checked:border-white peer-checked:outline peer-checked:outline-2 peer-checked:outline-green-secondary"></span>
+          Support Request
+        </label>
+      </div>
+      <span class="text-red text-lg query hidden">Please select a query type</span>
+    </section>
+
+    <!----------------------              MESSAGE           -->
+    <div>
+      <label class=" text-lg block mb-3"> Message <span class="text-grey-secondary">*</span></label>
+      <textarea name="message" id="message" rows="3" class="rounded-lg  w-full p-4 border border-bordercolor hover:border-hoverborder outline-none focus:border-hoverborder resize-none cursor-pointer block"></textarea>
+      <span class="text-red text-lg mt-4"></span>
+    </div>
+    <!----------------------              Contacted           -->
 
 
-      <label class="flex items-center radio border hover:border-hoverborder p-3 border-bordercolor rounded-lg cursor-pointer w-full hover:bg-[#E0F1E7]" for="generalenquiry">
-        <input type="radio" id="generalenquiry" name="choose" class="mr-2 hidden peer" />
-        <span class="inline-block w-4 h-4 mr-2 border-2 border-bordercolor rounded-full peer-checked:border-hoverborder peer-checked:bg-hoverborder"></span>
-        General Enquiry
-      </label>
-
-
-      <label class="flex items-center radio border hover:border-hoverborder p-3 border-bordercolor rounded-lg cursor-pointer w-full hover:bg-[#E0F1E7]" for="supportrequest">
-        <input type="radio" id="supportrequest" name="choose" class="mr-2 hidden peer" />
-        <span class="inline-block w-4 h-4 mr-2 border-2 border-bordercolor rounded-full peer-checked:border-hoverborder peer-checked:bg-hoverborder"></span>
-        Support Request
-      </label>
-
-      <!----------------------              MESSAGE           -->
+    <div class="grid">
+      <div class="flex items-center text-lg cursor-pointer  gap-2">
+        <input type="checkbox" id="consent" class="w-4 h-4 border-2 accent-hoverborder mr-2 rounded-none">
+        <label for="consent">I consent to being contacted by the team<span class="text-grey-secondary"> *</span></label>
+      </div>
+      <span class="text-red text-lg error  hidden  error"></span>
     </div>
 
-    <label class="text-lg   block mb-3 mt-8" for="message"> Message <span class="text-grey-secondary">*</span></label>
-    <textarea name="message" id="message " rows="3" class="rounded-lg  w-full p-4 border border-bordercolor hover:border-hoverborder outline-none focus:border-hoverborder resize-none cursor-pointer block"></textarea>
+    <!----------------------              Button           -->
 
-    <label class="flex items-center text-lg cursor-pointer mt-8 gap-2" for="consent">
-      <input type="checkbox" id="consent" class="hidden peer">
-      <span class="inline-block w-4 h-4 mr-2 border-2 border-bordercolor peer-checked:bg-hoverborder peer-checked:border-hoverborder"></span>
-      I consent to being contacted by the team <span class="text-grey-secondary">*</span>
-    </label>
-
-
-    <button class="text-white font-bold py-5 bg-button-primary w-full mt-10 rounded-lg hover:bg-grey-secondary cursor-pointer"> Submit </button>
+    <button type="submit" id="btnsummit" class="text-white font-bold py-5 bg-button-primary w-full  rounded-lg hover:bg-grey-secondary cursor-pointer"> Submit </button>
 
   </form>
+  <!--                               Message Sent        -->
+  <section class="bg-[#2A4244] p-6 rounded-lg absolute top-1 hidden" id="success-message">
+    <div class="flex gap-2">
+      <img class="block max-w-6" src="./assets/success-26.svg" alt="Success-Icon">
+      <p class="font-bold text-white">Message sent</p>
+    </div>
+    <p class="text-white mt-4">Thanks for completing the form. We'll be in touch soon!</p>
+  </section>
 
-  <script src="./js/extrairdados.js"></script>
+  <script src="./js/extractdata.js"></script>
+
+  <footer class="text-black text-lg text-center py-4">
+    <p class="text-sm">Made by Fabiano &copy; 2025</p>
+  </footer>
+
 </body>
 
 </html>

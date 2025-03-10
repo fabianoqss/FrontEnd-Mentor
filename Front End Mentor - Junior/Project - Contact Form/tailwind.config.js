@@ -3,6 +3,9 @@ module.exports = {
   content: ['./src/**/*.{html,js}'],
   theme: {
     extend: {
+      maxWidth: {
+        custom: '732px',
+      },
       screens: {
         sm: { max: '375px' },
       },
@@ -24,6 +27,7 @@ module.exports = {
         boxShadow: {
           bluezinho: '0 0 8px #E2FFFF',
         },
+        borderError: '#996265',
         red: '#D93333',
         white: '#FFFFFF',
         bordercolor: '#939999',
