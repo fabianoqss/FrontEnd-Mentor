@@ -1,4 +1,4 @@
-# Contact Form Project ![GitHub](https://img.shields.io/badge/Status-In%20Progress-blue)
+# Contact Form Project ![GitHub](https://img.shields.io/badge/Status-Finished-green)
 
 This project is a **Contact Form** built with HTML, CSS, and JavaScript, designed to enhance my front-end development skills, focusing on DOM manipulation and form handling.
 
