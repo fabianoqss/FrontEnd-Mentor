@@ -17,7 +17,7 @@
 
     <div class="grid grid-cols-2 sm:grid-cols-1 gap-4">
       <div class="input-box">
-        <label class="text-lg block mb-3" for="firstName">First Name<span class="text-grey-secondary">*</span></label>
+        <label class="text-lg block mb-3" for="firstName">First Name <span class="text-grey-secondary">*</span></label>
         <input type="text" id="firstName" name="firstName" class="rounded-lg  w-full p-3 border border-bordercolor hover:border-hoverborder outline-none focus:border-hoverborder cursor-pointer block">
         <span class="text-red text-lg mt-2"></span>
       </div>
@@ -37,7 +37,7 @@
 
 
     <!----------------------              QUERY TYPE            -->
-    <div>
+    <section>
       <p class="text-lg font-Karla mb-3"> Query Type <span class="text-grey-secondary">*</span></p>
 
       <div class="sm:grid flex gap-4 relative">
@@ -55,8 +55,8 @@
           Support Request
         </label>
       </div>
-    </div>
-    <span class="text-red text-lg query hidden">Please select a query type</span>
+      <span class="text-red text-lg query hidden">Please select a query type</span>
+    </section>
 
     <!----------------------              MESSAGE           -->
     <div>
@@ -67,11 +67,13 @@
     <!----------------------              Contacted           -->
 
 
-    <div class="flex items-center text-lg cursor-pointer  gap-2">
-      <input type="checkbox" id="consent" class="w-4 h-4 border-2 accent-hoverborder mr-2 rounded-none">
-      <label for="consent">I consent to being contacted by the team<span class="text-grey-secondary"> *</span></label>
+    <div class="grid">
+      <div class="flex items-center text-lg cursor-pointer  gap-2">
+        <input type="checkbox" id="consent" class="w-4 h-4 border-2 accent-hoverborder mr-2 rounded-none">
+        <label for="consent">I consent to being contacted by the team<span class="text-grey-secondary"> *</span></label>
+      </div>
+      <span class="text-red text-lg error  hidden  error"></span>
     </div>
-    <span class="text-red text-lg error  hidden mt-2 error"></span>
 
     <!----------------------              Button           -->
 
