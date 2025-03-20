@@ -46,7 +46,7 @@ The contact form allows users to submit their details, providing real-time valid
 1.  Clone the repository:
 
     ```bash
-    git clone https://github.com/yourusername/contact-form-project.git
+    git clone https://github.com/fabianoqss/contact-form-project.git
 
     ```
 
